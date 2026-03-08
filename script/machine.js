@@ -76,10 +76,7 @@ function refreshCounters(){
     btnAll.addEventListener("click",function() { filterCards("all"); });
     btnInterview.addEventListener("click",function() { filterCards("interview"); });
     btnRejected.addEventListener("click",  function() { filterCards("rejected"); });
-
-
-
-  
+ 
 function deleteCard(cardId) {
 
   const card = document.getElementById(cardId);
@@ -87,6 +84,4 @@ function deleteCard(cardId) {
 
   refreshCounters();
     }
-
-    // step 10 - run on page load
     refreshCounters();
