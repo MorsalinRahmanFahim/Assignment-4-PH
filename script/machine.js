@@ -65,7 +65,7 @@ function refreshCounters(){
     for(let btn of allFilterBtns){
         btn.className = "btn bg-white gray-font w-[80px]";
     }
-    if (filter === "all")       btnAll.className       = "btn btn-primary w-[80px]";
+    if (filter === "all") btnAll.className = "btn btn-primary w-[80px]";
     if (filter === "interview") btnInterview.className = "btn btn-primary w-[80px]";
     if (filter === "rejected")  btnRejected.className  = "btn btn-primary w-[80px]";
 
@@ -73,7 +73,7 @@ function refreshCounters(){
 
 }
 
-    btnAll.addEventListener("click",function() { filterCards("all"); });
-    btnInterview.addEventListener("click",function() { filterCards("interview"); });
-    btnRejected.addEventListener("click",  function() { filterCards("rejected"); });
+    btnAll.addEventListener("click",function(){ filterCards("all"); });
+    btnInterview.addEventListener("click",function(){ filterCards("interview"); });
+    btnRejected.addEventListener("click",  function(){ filterCards("rejected"); });
  

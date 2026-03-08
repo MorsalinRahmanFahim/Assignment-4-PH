@@ -12,7 +12,7 @@
      } else {
     card.dataset.status = "interview";
     badge.innerText     = "INTERVIEW";
-    badge.className     = "status-badge badge  py-4 bg-green-400 text-green-900";
+    badge.className     = "status-badge badge  py-4 bg-green-500 border-0 shadow-lg shadow-green-300/50 text-white";
     }
 
     filterCards(activeFilter);

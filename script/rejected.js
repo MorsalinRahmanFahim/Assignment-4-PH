@@ -11,7 +11,7 @@ function setRejected(cardId) {
   } else {
     card.dataset.status = "rejected";
     badge.innerText     = "REJECTED";
-    badge.className     = "status-badge badge py-4 bg-red-300 text-red-900";
+    badge.className     = "status-badge badge py-4 bg-red-600 text-white border-0 shadow-lg shadow-red-500/50";
   }
 
   filterCards(activeFilter);

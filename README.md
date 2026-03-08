@@ -40,3 +40,22 @@ So if we click the button, you’ll see this in the console:
 Button clicked  
 Div clicked
  
+                  ***Answer to the Question No 4***
+
+Event Delegation is a JavaScript technique where we add an event listener to the parent element instead of the child element. Due to the event bubbling property, the event propagates from the child element to the parent element. As a result, the parent element can handle the event triggered by the child element.
+
+In other words, instead of using many event listeners for different child elements, we use a single event listener for the parent element. Then, we identify the child element that triggered the event.
+
+Why it is useful
+
+1. Performance
+Suppose we are working on a web application that has a large number of elements, such as button elements or list item elements. Using the event delegation technique, we use a single event listener. As a consequence, the application is more efficient.
+
+2. Dynamic Elements
+Suppose we add more elements to the page later using JavaScript. In this case, the event delegation technique works well. We do not need to add more event listeners for the dynamically added elements.
+
+3. Simpler Code
+Instead of using the same event listener for different child elements, we can handle the code from a single point. 
+
+
+                                ***Answer to the Question No 4***
