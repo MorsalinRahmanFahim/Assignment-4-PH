@@ -18,6 +18,7 @@ function refreshCounters(){
     let interview= 0;
     let rejected= 0;
     let visible= 0;
+
     for (let card of cards){
             total++;
          if(card.dataset.status === "interview"){
@@ -29,6 +30,7 @@ function refreshCounters(){
              visible++;
     } 
  }
+
     totalCount.innerText = total;     
     interviewCount.innerText = interview; 
     rejectCount.innerText = rejected;   
@@ -63,9 +65,9 @@ function refreshCounters(){
     for(let btn of allFilterBtns){
         btn.className = "btn bg-white gray-font w-[80px]";
     }
-             if (filter === "all") btnAll.className = "btn btn-primary w-[80px]";
-             if (filter === "interview") btnInterview.className = "btn btn-primary w-[80px]";
-             if (filter === "rejected")  btnRejected.className  = "btn btn-primary w-[80px]";
+    if (filter === "all")       btnAll.className       = "btn btn-primary w-[80px]";
+    if (filter === "interview") btnInterview.className = "btn btn-primary w-[80px]";
+    if (filter === "rejected")  btnRejected.className  = "btn btn-primary w-[80px]";
 
     refreshCounters();
 

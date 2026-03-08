@@ -1,8 +1,7 @@
-
 function setRejected(cardId) {
 
   const card  = document.getElementById(cardId);
-  const badge = document.getElementById("badge" + cardId.slice(4));
+  const badge = document.getElementById("badge" + cardId.slice(4)); //{card-1 start sliceing after -}
 
   if (card.dataset.status === "rejected") {
     card.dataset.status = "not-applied";
@@ -16,5 +15,6 @@ function setRejected(cardId) {
   }
 
   filterCards(activeFilter);
+
 }
 
