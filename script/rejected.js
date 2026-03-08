@@ -1,0 +1,20 @@
+
+function setRejected(cardId) {
+
+  const card  = document.getElementById(cardId);
+  const badge = document.getElementById("badge" + cardId.slice(4));
+
+  if (card.dataset.status === "rejected") {
+    card.dataset.status = "not-applied";
+    badge.innerText     = "NOT APPLIED";
+    badge.className     = "status-badge badge py-4 bg-primary-content text-[#002c5c]";
+
+  } else {
+    card.dataset.status = "rejected";
+    badge.innerText     = "REJECTED";
+    badge.className     = "status-badge badge py-4 bg-red-300 text-red-900";
+  }
+
+  filterCards(activeFilter);
+}
+
