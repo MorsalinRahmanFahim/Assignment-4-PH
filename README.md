@@ -58,4 +58,22 @@ Suppose we add more elements to the page later using JavaScript. In this case, t
 Instead of using the same event listener for different child elements, we can handle the code from a single point. 
 
 
-                                ***Answer to the Question No 4***
+                                ***Answer to the Question No 5***
+
+preventDefault — "Don't do what you'd normally do"
+So let's say we have a link on the page. Normally clicking it navigates somewhere, right? With preventDefault, we're basically telling the browser — "Hey, I've got this. Don't do your thing."
+The click still travels up the page though. We're only stopping the browser's action, nothing else.
+
+js code example: 
+link.addEventListener("click", function(event) {
+  event.preventDefault(); // Browser won't follow the link
+});
+
+stopPropagation — "Stop here, don't tell anyone else"
+Now imagine we have a button sitting inside a div. When we click that button, the click doesn't just stay there — it bubbles up. The div hears it, then the div's parent hears it, and so on.
+stopPropagation is how we say "this click stays here, don't pass it up." The browser still does its default action, we're just keeping the event isolated.
+
+js code example : 
+button.addEventListener("click", function(event) {
+  event.stopPropagation(); // Parent elements won't hear this click
+});

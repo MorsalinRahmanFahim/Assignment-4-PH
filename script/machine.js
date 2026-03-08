@@ -77,3 +77,5 @@ function refreshCounters(){
     btnInterview.addEventListener("click",function(){ filterCards("interview"); });
     btnRejected.addEventListener("click",  function(){ filterCards("rejected"); });
  
+    
+ 
